@@ -4,7 +4,11 @@ pipeline {
     stages {
         stage('Cloning') {
             steps {
+<<<<<<< HEAD
                 git branch: 'main', credentialsId: '46e77697-be86-4f93-b431-d0bbe5da99ec', url: 'https://github.com/trinhhieudev/democicd.git'
+=======
+                git branch: 'develop', credentialsId: '46e77697-be86-4f93-b431-d0bbe5da99ec', url: 'https://github.com/trinhhieudev/democicd.git'
+>>>>>>> 189d8f250818f1d8a6796539364c582308ed0767
             }
         }
         stage('Restore package') {
